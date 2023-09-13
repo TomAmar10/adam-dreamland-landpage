@@ -82,12 +82,19 @@ main > .workshop-section {
   justify-content: center;
   align-items: center;
 }
+.workshop-goals {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 1rem;
+}
 .workshop-description-container img {
   width: 500px;
   border-radius: 10px;
   margin-left: 200px;
 }
-.workshop-goal {
+.workshop-leadership {
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
   padding: 1rem;
@@ -102,6 +109,12 @@ main > .workshop-section {
   text-align: start;
   list-style: "⭐ ";
 }
+.goals-img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.64) 0px 3px 10px;
+}
 hr {
   width: 80%;
   margin: 4rem 0;
@@ -111,7 +124,7 @@ hr {
   .workshop-description-container img {
     margin-left: 300px;
   }
-  .workshop-goal {
+  .workshop-leadership {
     bottom: -100px;
     left: 0px;
   }
@@ -130,11 +143,14 @@ hr {
     max-width: 400px;
     margin-left: 100px;
   }
-  .workshop-goal {
+  .workshop-leadership {
     bottom: -150px;
     left: -50px;
     width: 100%;
     font-size: 1rem;
+  }
+  .workshop-goals {
+    width: calc(100% - 2rem);
   }
 }
 @media only screen and (max-width: 650px) {
@@ -152,7 +168,7 @@ hr {
     max-width: 400px;
     margin: 0;
   }
-  .workshop-goal {
+  .workshop-leadership {
     position: unset;
     width: 100%;
     font-size: 1rem;
